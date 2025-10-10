@@ -89,7 +89,7 @@ Below are the main runnable scripts and a brief description and minimal usage ex
 - Purpose: lower-level extraction scripts for converting gridded data to point/district values and GeoJSONs.
 - Note: these scripts rely on consistent grid definitions (lat/lon arrays), correct shape for binary `.GRD` files, and a matching boundary GeoJSON. Inspect the top of each script for input paths and grid parameters.
 
-## Assumptions, caveats and limitations
+## Assumptions and limitations
 
 - The scripts assume the IMD gridded products use the documented lat/lon grid and that the `.GRD` binary ordering matches the reshape used in `bin_to_csv.py` and the test script `test_temp.py`. If IMD changes ordering/shape, outputs will be incorrect.
 
@@ -110,8 +110,6 @@ Below are the main runnable scripts and a brief description and minimal usage ex
   - builds a KDTree of the gridded points and finds the nearest grid point for each district centroid,
   - assigns the nearest grid cell's daily min/max values to the district for each day, and writes per-year `temp_csv/Temperature_{year}.csv` files.
   - This nearest-grid extrapolation is a pragmatic approach when grid coverage is sparse, but it assumes the nearest grid cell is representative of the district; treat values for extrapolated districts as lower-confidence compared to directly-covered districts.
-
-## Assumptions and limitations
 
 - Grid alignment and resolution
   - The scripts assume the IMD gridded products use the documented lat/lon grid and that the `.GRD` binary ordering matches the reshape used in `bin_to_csv.py` and the test script `test_temp.py`. If IMD changes ordering/shape, outputs will be incorrect.
