@@ -1,7 +1,7 @@
 import geopandas as gpd
 
 # Load the full India district GeoJSON
-india = gpd.read_file("INDIA.json")
+india = gpd.read_file("output.geojson")
 
 # ✅ Corrected state name for Delhi
 delhi_name = "NCTofDelhi"
