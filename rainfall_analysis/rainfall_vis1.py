@@ -9,9 +9,13 @@ from branca.colormap import LinearColormap
 from shapely.geometry import MultiPolygon
 
 # --- Load GeoJSON boundary and data if not already present in this module ---
-boundary_path = "GeoJsons/Delhi_NCR_Districts_final.geojson"
-filled_csv = 'delhi_ncr_rainfall_monthly_avg_2013_2024_filled.csv'
-base_csv = 'delhi_ncr_rainfall_monthly_avg_2013_2024.csv'
+# Get the script's directory and construct absolute paths
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(script_dir)
+
+boundary_path = os.path.join(project_root, "GeoJsons", "Delhi_NCR_Districts_final.geojson")
+filled_csv = os.path.join(project_root, 'delhi_ncr_rainfall_monthly_avg_2013_2024_filled.csv')
+base_csv = os.path.join(project_root, 'delhi_ncr_rainfall_monthly_avg_2013_2024.csv')
 
 if 'boundary' not in globals():
     if not os.path.exists(boundary_path):
