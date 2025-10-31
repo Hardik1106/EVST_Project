@@ -70,6 +70,13 @@ The project combines multiple environmental and socioeconomic datasets to:
   │   ├── viz.py                         # Basic visualization
   │   └── geo_heatmap_viz.py            # Geographic heatmap
   │
+  ├── Air Quality Index/                 # AQI data & analysis (2018-2025)
+  │   ├── README.md                      # AQI documentation
+  │   ├── AQI_Data_Final/               # Cleaned monthly AQI data
+  │   ├── Data cleaning scripts/        # Processing & standardization scripts
+  │   ├── Vizualization_scripts/        # Interactive & static viz generators
+  │   └── Key vizualization outputs/    # AQI maps & analysis charts
+  │
   ├── CVI_Analysis/                      # Climate Vulnerability Index
   │   ├── README.md                      # CVI methodology & usage
   │   ├── calculate_cvi_all_districts.py # Main CVI computation
@@ -125,6 +132,13 @@ All primary data used in this project are published by the India Meteorological 
 6. **Population & Income**
    - Source: Census 2011, state statistical bulletins
    - Format: CSV district-wise tabular data
+
+7. **Air Quality Index (AQI)**
+   - Source: Central Pollution Control Board (CPCB) / State Pollution Control Boards
+   - Product: Monthly average AQI data from monitoring stations
+   - Years: 2018–2025
+   - Format: Excel files reorganized to district-level CSVs
+   - Coverage: 36 districts with 37 monitoring stations
 
 ## Key Features & Methods
 
@@ -224,6 +238,7 @@ For detailed information about each data type and processing workflow, see the R
 - **Groundwater**: [GroundWater/README.md](GroundWater/README.md)
 - **Population**: [Population/README.md](Population/README.md)
 - **Income**: [Income/README.md](Income/README.md)
+- **Air Quality Index**: [Air Quality Index/README.md](Air%20Quality%20Index/README.md)
 - **CVI Analysis**: [CVI_Analysis/README.md](CVI_Analysis/README.md)
 
 ## Project Structure Conventions
