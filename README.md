@@ -1,93 +1,264 @@
-# EVST_Project
+# Delhi NCR Environmental & Socioeconomic Data Analysis (EVST_Project)
 
-This repository contains code and processed data for analysis and visualization of daily and monthly temperature and rainfall for the Delhi National Capital Region (NCR) across 2013–2024. The project converts IMD gridded binary/NetCDF products to district-level CSVs, computes monthly averages, and standardizes the series for anomaly/ trend analysis.
+This repository contains a comprehensive analysis of environmental and socioeconomic indicators for the Delhi National Capital Region (NCR) from 2013–2024. The project processes IMD gridded climate data (temperature, rainfall), groundwater levels, population statistics, income data, and computes a Climate Vulnerability Index (CVI) for all NCR districts.
 
-## Contents
+## Project Overview
 
-- `minT_GRD/`, `maxT_GRD/` - original IMD binary/GRD files for min/max temperature (one file per year).
-- `minT_csv/`, `maxT_csv/` - district-level CSV outputs created by the extraction scripts (one CSV per year).
-- `rainfall_NetCDF/` - IMD rainfall NetCDF files (one file per year).
-- `rainfall_csv/` - intermediate CSV conversions from NetCDF to point/district values.
-- `rainfall_gjs/`, `temp_gjs/` - GeoJSON outputs (district-level) per year.
-- `rainfall_sd_gjs/`, `temp_sd_gjs/` - standardized GeoJSONs (z-scores) for mapping anomalies.
-- `temp_csv/` - processed temperature CSVs used to compute monthly district averages (Temperature_{year}.csv).
-- `GeoJsons/Delhi_NCR_Districts.geojson` - boundary file with district polygons for Delhi NCR used for spatial extraction.
-- `process_temp.py`, `process_rainfall.py` - scripts to aggregate per-district monthly averages across years.
-- `sd_temp.py`, `sd_rainfall.py` - scripts to compute global and district-wise standardized (z-score) series.
-- `bin_to_csv.py`, `nc_to_csv.py`, `nc_to_csv_24.py`, `csv_to_gjs.py`, `sd_rainfall_gjs.py`, `sd_temp_gjs.py` - assorted helper scripts used in the binary/NetCDF to CSV/GeoJSON conversion (see script header docstrings for details).
+The project combines multiple environmental and socioeconomic datasets to:
 
-## Metadata & Data sources
+- Convert IMD gridded binary/NetCDF climate data to district-level CSVs
+- Fill missing district values using spatial extrapolation (neighbor averaging + inverse-distance weighting)
+- Compute monthly averages and standardized anomalies for climate variables
+- Analyze groundwater trends and population/income distributions
+- Calculate comprehensive Climate Vulnerability Index (CVI) for each district
+- Generate interactive time-series visualizations and choropleth maps
 
-The primary data used in this project are published by the India Meteorological Department (IMD) and the National Capital Region Planning Board (NCRPB) for boundary definitions. The exact sources used (saved under `Sources Used/`) are:
+## Repository Structure
 
-1. Delhi NCR constituent districts / definition (NCRPB)
-    - Agency: National Capital Region Planning Board (NCRPB)
-    - Source: NCRPB constituent districts page [NCRPB definition][ncrpb-url]
+```
+  EVST_Project/
+  ├── README.md                          # This file - project overview
+  ├── requirements.txt                   # Python dependencies
+  ├── .gitattributes                     # Git LFS config for HTML files
+  │
+  ├── GeoJsons/                          # District boundary files
+  │   ├── Delhi_NCR_Districts_final.geojson  # Primary boundary (dtname property)
+  │   ├── Delhi_NCR_Districts.geojson        # Legacy boundary
+  │   └── *.py                               # Boundary processing scripts
+  │
+  ├── Temperature/                       # Temperature data processing
+  │   ├── README.md                      # Temperature-specific documentation
+  │   ├── minT_GRD/, maxT_GRD/          # IMD binary files (2013-2024)
+  │   ├── minT_csv/, maxT_csv/          # Extracted district CSVs
+  │   ├── temp_csv/                      # Extrapolated daily CSVs per year
+  │   ├── temp_analysis/                 # Anomaly analysis & visualizations
+  │   ├── bin_to_csv.py                  # GRD → CSV converter
+  │   ├── temp_extrap.py                 # Daily extrapolation (neighbor + IDW)
+  │   ├── process_temp.py                # Monthly aggregation
+  │   ├── temp_vis1.py                   # Interactive time-series maps
+  │   └── sd_temp.py                     # Standardization (z-scores)
+  │
+  ├── Rainfall/                          # Rainfall data processing
+  │   ├── README.md                      # Rainfall-specific documentation
+  │   ├── rainfall_NetCDF/              # IMD NetCDF files (2013-2024)
+  │   ├── rainfall_csv/                  # Extracted district CSVs
+  │   ├── rainfall_analysis/             # Filled data & visualizations
+  │   ├── process_rainfall.py            # Monthly aggregation
+  │   ├── rainfall_extrap.py             # Missing data extrapolation
+  │   ├── rainfall_vis2.py               # Interactive visualizations
+  │   └── sd_rainfall.py                 # Standardization
+  │
+  ├── GroundWater/                       # Groundwater level data
+  │   ├── README.md                      # Groundwater documentation
+  │   ├── ncr_groundwater_monthly.csv    # Monthly groundwater levels
+  │   ├── ncr_groundwater_yearly.csv     # Yearly averages
+  │   ├── reader.py                      # Data extraction
+  │   ├── plotter.py, plotter2.py        # Visualization scripts
+  │   └── filter_csv.py                  # NCR district filtering
+  │
+  ├── Population/                        # Population data & analysis
+  │   ├── README.md                      # Population documentation
+  │   ├── NCR_District_Wise_Population.csv  # District population data
+  │   ├── Delhi_NCR_Population_Data_Clean.csv
+  │   ├── step1_extract_delhi_ncr_clean.py  # Data cleaning
+  │   ├── step2_choropleth_viz.py           # Choropleth maps
+  │   └── *.html                            # Generated visualizations
+  │
+  ├── Income/                            # Per-capita income data
+  │   ├── README.md                      # Income documentation
+  │   ├── district_wise.csv              # District income data
+  │   ├── viz.py                         # Basic visualization
+  │   └── geo_heatmap_viz.py            # Geographic heatmap
+  │
+  ├── CVI_Analysis/                      # Climate Vulnerability Index
+  │   ├── README.md                      # CVI methodology & usage
+  │   ├── calculate_cvi_all_districts.py # Main CVI computation
+  │   ├── METHODOLOGY.md                 # Detailed methodology
+  │   ├── QUICK_START.md                 # Quick usage guide
+  │   ├── cvi_results/                   # Output CSVs and maps
+  │   └── *.md                           # Various reports
+  │
+  ├── Interactive Visualizations/        # All generated HTML maps
+  │   ├── temp_timeseries/              # Temperature animations
+  │   ├── rainfall_time_series/         # Rainfall animations
+  │   ├── groundwater_time_series/      # Groundwater trends
+  │   └── delhi_ncr_cvi_map.html        # CVI choropleth
+  │
+  ├── FINAL_VIZ/                         # Final polished visualizations
+  │   ├── temp_viz/
+  │   └── groundwater_viz/
+  │
+  └── Sources Used/                      # Data source references
+      ├── Delhi_NCR Defination.url
+      ├── Rainfall Source.url
+      ├── Temp_max Source.url
+      └── Temp_min Source.url
+  ```
 
-2. Rainfall (IMD high spatial resolution rainfall products)
-    - Agency: India Meteorological Department (IMD)
-    - Source: IMD rainfall NetCDF product landing page [IMD rainfall][imd-rain-url]
+## Data Sources & Metadata
 
-3. Maximum temperature (IMD daily maximum temperature grid)
-    - Agency: India Meteorological Department (IMD)
-    - Source: IMD max temperature grid product page [IMD maxT][imd-maxt-url]
+All primary data used in this project are published by the India Meteorological Department (IMD) and the National Capital Region Planning Board (NCRPB). Data source shortcuts are saved under `Sources Used/`:
 
-4. Minimum temperature (IMD daily minimum temperature grid)
-    - Agency: India Meteorological Department (IMD)
-    - Source: IMD min temperature grid product page [IMD minT][imd-mint-url]
+1. **Delhi NCR constituent districts definition**
+   - Agency: National Capital Region Planning Board (NCRPB)
+   - Reference: NCRPB constituent districts page
 
-If you need citation-ready metadata (DOIs, version numbers or file checksums) we can add them for each file later — those are not included in the saved `.url` shortcuts.
+2. **Rainfall data** (IMD high spatial resolution gridded rainfall)
+   - Agency: India Meteorological Department (IMD)
+   - Product: 0.25° × 0.25° daily gridded rainfall (NetCDF format)
+   - Years: 2013–2024
 
-## Processing workflow (high-level)
+3. **Maximum temperature** (IMD daily gridded maximum temperature)
+   - Agency: India Meteorological Department (IMD)
+   - Product: 1° × 1° daily gridded max temperature (GRD binary format)
+   - Years: 2013–2024
 
-This project follows a reproducible pipeline from raw gridded sources to district-level monthly standardized outputs. Steps and primary scripts:
+4. **Minimum temperature** (IMD daily gridded minimum temperature)
+   - Agency: India Meteorological Department (IMD)
+   - Product: 1° × 1° daily gridded min temperature (GRD binary format)
+   - Years: 2013–2024
 
-1. Data acquisition (manual / IMD website downloads)
-    - IMD GRD/NetCDF files for each year are placed into `minT_GRD/`, `maxT_GRD/`, and `rainfall_NetCDF/`.
+5. **Groundwater levels**
+   - Source: Central Ground Water Board (CGWB) / State monitoring data
+   - Format: CSV with monthly/yearly district averages
 
-2. Binary / NetCDF -> CSV extraction
-    - Temperature GRD binary conversion: `bin_to_csv.py` (reads `MinTemp_MinT_{year}.GRD` and `Maxtemp_MaxT_{year}.GRD`, maps grid points to district polygons in `GeoJsons/Delhi_NCR_Districts.geojson`, and outputs per-year district CSVs into `minT_csv/` and `maxT_csv/`).
-    - Rainfall NetCDF conversion: `rainfall_NetCDF/nc_to_csv.py` (or `rainfall_csv/nc_to_csv_24.py`) converts daily rainfall NetCDF to point/district CSVs and saves GeoJSONs under `rainfall_gjs/`.
+6. **Population & Income**
+   - Source: Census 2011, state statistical bulletins
+   - Format: CSV district-wise tabular data
 
-3. Monthly averaging and combining across years
-    - Temperature monthly averages: `process_temp.py` reads the per-year `Temperature_{year}.csv` in `temp_csv/`, computes district-by-month averages (minT/maxT and avgT), and combines all years into `delhi_ncr_temp_monthly_avg_2013_2024.csv`.
-    - Rainfall monthly averages: `process_rainfall.py` aggregates district-by-month mean rainfall from GeoJSONs saved in `rainfall_gjs/` and writes `delhi_ncr_rainfall_monthly_avg_2013_2024.csv`.
+## Key Features & Methods
 
-4. Standardization and anomaly calculation
-    - `sd_temp.py` computes global z-scores for `minT`, `maxT` and `avgT` and district-wise standardized values saved to `delhi_ncr_temp_monthly_avg_standardized.csv`.
-    - `sd_rainfall.py` computes global and district-wise standardized rainfall series and writes `delhi_ncr_rainfall_monthly_avg_standardized.csv`.
+### Spatial Extrapolation for Missing Districts
 
-5. GeoJSON generation for mapping
-    - `csv_to_gjs.py` (in `temp_gjs/` and `rainfall_gjs/`) converts the combined CSVs into per-year GeoJSONs suitable for mapping time-series and anomalies.
-    - Standardized GeoJSONs are saved under `temp_sd_gjs/` and `rainfall_sd_gjs/` for visualization.
+When gridded climate data do not cover certain districts (due to coarse resolution or district boundaries not aligning with grid points), we use a two-stage extrapolation:
 
-6. Analysis & visualization
-    - Scripts in `temp_analysis/` and `rainfall_analysis/` create timeseries, anomaly plots and district trend slopes. Output maps are saved under `*_vis_maps/`.
+1. **Neighbor Averaging**: For missing district-day values, average the values of directly adjacent districts (polygon intersects).
+2. **Inverse-Distance Weighting (IDW)**: If neighbor averaging fails, compute a weighted average from the k nearest districts (based on centroid distance in EPSG:32643 projection), where closer districts contribute more.
 
-## Script-level details and how to run
+All filled values are flagged with `FILLED=True` and `FILLED_METHOD` to preserve data provenance.
 
-Below are the main runnable scripts and a brief description and minimal usage examples.
+### Monthly Aggregation & Standardization
 
-- `process_temp.py`
-  - Purpose: combine per-year temperature CSVs to create the monthly district averages CSV.
-  - Inputs: `temp_csv/Temperature_{year}.csv` files, `GeoJsons/Delhi_NCR_Districts.geojson`
-- Output: `delhi_ncr_temp_monthly_avg_2013_2024.csv`
-- Run: python process_temp.py
+- Daily district values are aggregated to monthly averages.
+- Standardized (z-score) series are computed globally and per-district to identify anomalies and trends.
+- Output CSVs include columns: YEAR, MONTH, DISTRICT_NAME, value, and flags.
 
-- `process_rainfall.py`
-- Purpose: aggregate district/month mean rainfall from GeoJSONs to one combined CSV.
-- Inputs: `rainfall_gjs/delhi_ncr_rainfall_{year}.geojson`
-- Output: `delhi_ncr_rainfall_monthly_avg_2013_2024.csv`
-- Run: python process_rainfall.py
+### Interactive Visualizations
 
-- `sd_temp.py`, `sd_rainfall.py`
-  - Purpose: compute z-scores (global and district-wise) and save standardized CSVs.
-- Input: combined monthly CSVs created by `process_*` scripts.
-- Run: python sd_temp.py
+- **TimestampedGeoJson** maps allow time-slider navigation through monthly data.
+- **Choropleth maps** show spatial distribution of population, income, CVI scores.
+- MultiPolygon districts (Faridabad, Rewari, Bharatpur) are handled by creating separate features for each polygon part.
+- All HTML outputs use Git LFS (see `.gitattributes`).
 
-- `bin_to_csv.py` / `nc_to_csv.py` / `nc_to_csv_24.py` / `csv_to_gjs.py`
-- Purpose: lower-level extraction scripts for converting gridded data to point/district values and GeoJSONs.
-- Note: these scripts rely on consistent grid definitions (lat/lon arrays), correct shape for binary `.GRD` files, and a matching boundary GeoJSON. Inspect the top of each script for input paths and grid parameters.
+### Climate Vulnerability Index (CVI)
+
+The CVI integrates multiple indicators across exposure, sensitivity, and adaptive capacity dimensions:
+
+- **Exposure**: Temperature anomalies, rainfall variability, groundwater depletion
+- **Sensitivity**: Population density, urbanization rate
+- **Adaptive Capacity**: Per-capita income, infrastructure access
+
+See `CVI_Analysis/METHODOLOGY.md` for detailed calculation steps and `CVI_Analysis/QUICK_START.md` for usage.
+
+## Quick Start
+
+### Prerequisites
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+```
+
+Required Python packages:
+
+- `pandas`, `numpy`, `geopandas`, `shapely`
+- `xarray`, `netCDF4`, `rioxarray` (for NetCDF processing)
+- `scipy` (for spatial operations)
+- `folium`, `branca` (for interactive maps)
+- `scikit-learn` (for standardization)
+
+### Basic Workflow
+
+1. **Process Temperature Data**
+
+   ```bash
+   cd Temperature
+   # See Temperature/README.md for detailed steps
+   python bin_to_csv.py          # Extract from GRD files
+   python temp_extrap.py          # Fill missing districts
+   python process_temp.py         # Monthly aggregation
+   python temp_vis1.py            # Generate visualizations
+   ```
+
+2. **Process Rainfall Data**
+
+   ```bash
+   cd Rainfall
+   # See Rainfall/README.md for detailed steps
+   python rainfall_csv/nc_to_csv.py    # Extract from NetCDF
+   python rainfall_extrap.py           # Fill missing districts
+   python process_rainfall.py          # Monthly aggregation
+   python rainfall_vis2.py             # Generate visualizations
+   ```
+
+3. **Calculate Climate Vulnerability Index**
+
+   ```bash
+   cd CVI_Analysis
+   # See CVI_Analysis/QUICK_START.md for detailed usage
+   python calculate_cvi_all_districts.py
+   ```
+
+### Output Files
+
+- **Monthly climate CSVs**: `Temperature/delhi_ncr_temp_monthly_avg_2013_2024.csv`, `Rainfall/delhi_ncr_rainfall_monthly_avg_2013_2024_filled.csv`
+- **Interactive maps**: `Interactive Visualizations/` (temperature, rainfall, groundwater time-series)
+- **CVI results**: `CVI_Analysis/cvi_results/cvi_results_all_districts.csv` and map
+
+## Detailed Documentation
+
+For detailed information about each data type and processing workflow, see the README files in each subdirectory:
+
+- **Temperature**: [Temperature/README.md](Temperature/README.md)
+- **Rainfall**: [Rainfall/README.md](Rainfall/README.md)
+- **Groundwater**: [GroundWater/README.md](GroundWater/README.md)
+- **Population**: [Population/README.md](Population/README.md)
+- **Income**: [Income/README.md](Income/README.md)
+- **CVI Analysis**: [CVI_Analysis/README.md](CVI_Analysis/README.md)
+
+## Project Structure Conventions
+
+- **Naming**: District names are normalized to lowercase (`DISTRICT_NAME_clean`) for robust joins across datasets.
+- **GeoJSON**: `GeoJsons/Delhi_NCR_Districts_final.geojson` uses `dtname` property; legacy files use `NAME_2`.
+- **Filled Data**: All extrapolated/filled values include `FILLED` (boolean) and `FILLED_METHOD` ('neighbor', 'idw', or 'original') columns.
+- **Time Format**: Date columns use `YYYY-MM-DD` format; `TIME_ISO` uses ISO 8601 format for visualization compatibility.
+
+## Known Issues & Limitations
+
+1. **Temperature grid resolution**: IMD temperature data is 1° × 1° (coarse), leading to ~33 districts with no direct grid points. Extrapolation fills these gaps but introduces uncertainty.
+2. **Rainfall coverage**: 0.25° grid is finer but still misses ~13 districts; neighbor/IDW fills applied.
+3. **MultiPolygon rendering**: Districts with non-contiguous parts (Faridabad, Rewari, Bharatpur) are handled by creating separate features per polygon part.
+4. **Git LFS**: HTML visualization files use Git LFS; ensure `git lfs pull` after cloning.
+5. **Performance**: Feature generation for time-series maps can be slow for large date ranges; consider geometry simplification or caching.
+
+## Contributing & Extensions
+
+Potential improvements:
+
+- Add elevation/terrain-weighted IDW for temperature extrapolation
+- Incorporate land-use/land-cover data into CVI
+- Automate data updates (e.g., fetch latest IMD products)
+- Add statistical tests for trend significance
+- Implement uncertainty quantification for filled values
+
+---
+
+**Last Updated**: October 2025  
+**Data Coverage**: 2013–2024 (Climate), 2011+ (Socioeconomic)  
+**Spatial Extent**: Delhi NCR (37 districts across Delhi, Haryana, Uttar Pradesh, Rajasthan)
+
+- `sd_temp.py` computes global z-scores for `minT`, `maxT` and `avgT` and district-wise standardized values saved to `delhi_ncr_temp_monthly_avg_standardized.csv`.
+- `sd_rainfall.py` computes global and district-wise standardized rainfall series and writes `delhi_ncr_rainfall_monthly_avg_standardized.csv`.
 
 ## Assumptions and limitations
 
@@ -155,10 +326,10 @@ Below are the main runnable scripts and a brief description and minimal usage ex
 
 See `requirements.txt` for the main Python packages used in the repository. Install them with:
 
-    powershell
-    python -m venv .venv
-    .\.venv\Scripts\Activate.ps1
-    pip install -r requirements.txt
+  powershell
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+  pip install -r requirements.txt
 
 ## Project structure
 
@@ -172,7 +343,8 @@ Top-level files and folders relevant to running the pipeline:
 - `temp_gjs/`, `rainfall_gjs/` - GeoJSON outputs
 - `GeoJsons/Delhi_NCR_Districts.geojson` - district boundaries (Delhi NCR)
 
-[ncrpb-url]: https://ncrpb.nic.in/ncrconstituent.html
-[imd-rain-url]: https://imdpune.gov.in/cmpg/Griddata/Rainfall_25_NetCDF.html
-[imd-maxt-url]: https://imdpune.gov.in/cmpg/Griddata/Max_1_Bin.html
-[imd-mint-url]: https://imdpune.gov.in/cmpg/Griddata/Min_1_Bin.html
+## Contact
+
+- Hardik Chadha (<hardik.chadha@research.iiit.ac.in>)
+- Arnav Sharma (<arnav.sharma@research.iiit.ac.in>)
+- Jatin Agrawal (<jatin.agrawal@research.iiit.ac.in>)
