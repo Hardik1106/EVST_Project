@@ -1,0 +1,58 @@
+[
+  {
+    "district": "Central Delhi",
+    "exposure": 0.7784222168116941,
+    "sensitivity": 0.8319,
+    "adaptive_capacity": 0.3,
+    "potential_impact": 0.805161108405847,
+    "ouv_vulnerability": 0.5636127758840929,
+    "esc_impact": 0.5381676655304557,
+    "community_vulnerability": 0.376717365871319,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3411395176652599,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.770563656711097,
+      "temp_variability": 6.58837642834972,
+      "heat_wave_count": 8,
+      "aqi": 178
+    },
+    "sensitivity_components": {
+      "population_density": 27730.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 4.2
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 100.0
+    }
+  },
+  {
+    "district": "Alwar",
+    "exposure": 0.7646015233067487,
+    "sensitivity": 0.013139999999999999,
+    "adaptive_capacity": 0.14955560921743333,
+    "potential_impact": 0.38887076165337436,
+    "ouv_vulnerability": 0.33071295798745665,
+    "esc_impact": 0.398427774792474,
+    "community_vulnerability": 0.33884066620423925,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4651675507859248,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.055318359462035,
+      "temp_variability": 6.409578702125415,
+      "heat_wave_count": 8,
+      "aqi": 92
+    },
+    "sensitivity_components": {
+      "population_density": 438.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 21.892339368890603
+    },
+    "adaptive_capacity_components": {
+      "income": 137313,
+      "urbanization_rate": 17.812169739144444
+    }
+  }
+]
