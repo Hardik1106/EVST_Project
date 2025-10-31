@@ -7,14 +7,21 @@ import os
 import numpy as np
 from shapely.geometry import MultiPolygon
 
+# --- Get absolute paths ---
+script_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(script_dir)
+
 # --- Load GeoJSON boundary ---
-boundary_path = "GeoJsons/Delhi_NCR_Districts_final.geojson"
+boundary_path = os.path.join(project_root, "GeoJsons", "Delhi_NCR_Districts.geojson")
 if not os.path.exists(boundary_path):
     raise FileNotFoundError(f"Boundary GeoJSON not found: {boundary_path}")
 boundary = gpd.read_file(boundary_path).to_crs(epsg=4326)
 
 # --- Load monthly temperature CSV ---
-df = pd.read_csv("delhi_ncr_temp_monthly_avg_2013_2024.csv")
+csv_path = os.path.join(project_root, "delhi_ncr_temp_monthly_avg_2013_2024.csv")
+if not os.path.exists(csv_path):
+    raise FileNotFoundError(f"Temperature CSV not found: {csv_path}")
+df = pd.read_csv(csv_path)
 df["MONTH"] = df["MONTH"].astype(int)
 
 # --- Normalize district name columns in boundary and data (handle dtname)
