@@ -1,0 +1,28 @@
+{
+  "total_districts": 35,
+  "average_cvi": 0.3169389432734407,
+  "median_cvi": 0.33945141892153374,
+  "min_cvi": 0.025192723103910714,
+  "max_cvi": 0.5157787799291214,
+  "std_cvi": 0.1084040903282009,
+  "vulnerability_distribution": {
+    "LOW": 5,
+    "MODERATE": 27,
+    "HIGH": 3,
+    "VERY HIGH": 0
+  },
+  "most_vulnerable": [
+    "Shahdara",
+    "Charki Dadri",
+    "Nuh",
+    "North West Delhi",
+    "Mahendragarh"
+  ],
+  "least_vulnerable": [
+    "Gautam Buddha Nagar",
+    "Gurugram",
+    "Faridabad",
+    "West Delhi",
+    "Panipat"
+  ]
+}

@@ -1,0 +1,1017 @@
+[
+  {
+    "district": "Alwar",
+    "exposure": 0.7646015233067487,
+    "sensitivity": 0.013139999999999999,
+    "adaptive_capacity": 0.14955560921743333,
+    "potential_impact": 0.38887076165337436,
+    "ouv_vulnerability": 0.33071295798745665,
+    "esc_impact": 0.398427774792474,
+    "community_vulnerability": 0.33884066620423925,
+    "cvi_score": 0.33884066620423925,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4651675507859248,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.055318359462035,
+      "temp_variability": 6.409578702125415,
+      "heat_wave_count": 8,
+      "aqi": 92
+    },
+    "sensitivity_components": {
+      "population_density": 438.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 21.892339368890603
+    },
+    "adaptive_capacity_components": {
+      "income": 137313,
+      "urbanization_rate": 17.812169739144444
+    }
+  },
+  {
+    "district": "Baghpat",
+    "exposure": 0.7555055012992022,
+    "sensitivity": 0.029579999999999995,
+    "adaptive_capacity": 0.12119834934399959,
+    "potential_impact": 0.3925427506496011,
+    "ouv_vulnerability": 0.3449672172239162,
+    "esc_impact": 0.40698033033434977,
+    "community_vulnerability": 0.35765498608235086,
+    "cvi_score": 0.35765498608235086,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3887901917194505,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 110
+    },
+    "sensitivity_components": {
+      "population_density": 986.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 24.452857142857145
+    },
+    "adaptive_capacity_components": {
+      "income": 82685,
+      "urbanization_rate": 21.106283114666535
+    }
+  },
+  {
+    "district": "Bharatpur",
+    "exposure": 0.7717217763801169,
+    "sensitivity": 0.01509,
+    "adaptive_capacity": 0.14506739327822035,
+    "potential_impact": 0.39340588819005845,
+    "ouv_vulnerability": 0.33633552149002366,
+    "esc_impact": 0.4018013128940142,
+    "community_vulnerability": 0.343513043816713,
+    "cvi_score": 0.343513043816713,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.5016485630793976,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.055318359462035,
+      "temp_variability": 6.409578702125415,
+      "heat_wave_count": 8,
+      "aqi": 88
+    },
+    "sensitivity_components": {
+      "population_density": 503.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 13.547060434274751
+    },
+    "adaptive_capacity_components": {
+      "income": 123979,
+      "urbanization_rate": 19.427364426073453
+    }
+  },
+  {
+    "district": "Bhiwani",
+    "exposure": 0.7837977688801433,
+    "sensitivity": 0.01026,
+    "adaptive_capacity": 0.10591318525554547,
+    "potential_impact": 0.39702888444007167,
+    "ouv_vulnerability": 0.3549782906505678,
+    "esc_impact": 0.4129869743903407,
+    "community_vulnerability": 0.36924620846360934,
+    "cvi_score": 0.36924620846360934,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.5182047387854176,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.013102332688796,
+      "temp_variability": 6.613818479048161,
+      "heat_wave_count": 8,
+      "aqi": 98
+    },
+    "sensitivity_components": {
+      "population_density": 342.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 12.394068238309924
+    },
+    "adaptive_capacity_components": {
+      "income": 67050,
+      "urbanization_rate": 19.65939508518182
+    }
+  },
+  {
+    "district": "Bulandshahr",
+    "exposure": 0.7709711289642408,
+    "sensitivity": 0.03456,
+    "adaptive_capacity": 0.1653590730496658,
+    "potential_impact": 0.4027655644821204,
+    "ouv_vulnerability": 0.3361646240830316,
+    "esc_impact": 0.40169877444981894,
+    "community_vulnerability": 0.3352742374616101,
+    "cvi_score": 0.3352742374616101,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4609749319626268,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.689906245858488,
+      "temp_variability": 6.543845149067235,
+      "heat_wave_count": 8,
+      "aqi": 105
+    },
+    "sensitivity_components": {
+      "population_density": 1152.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 7.687815403328047
+    },
+    "adaptive_capacity_components": {
+      "income": 82014,
+      "urbanization_rate": 35.98309101655527
+    }
+  },
+  {
+    "district": "Central Delhi",
+    "exposure": 0.7784222168116941,
+    "sensitivity": 0.8319,
+    "adaptive_capacity": 0.3,
+    "potential_impact": 0.805161108405847,
+    "ouv_vulnerability": 0.5636127758840929,
+    "esc_impact": 0.5381676655304557,
+    "community_vulnerability": 0.376717365871319,
+    "cvi_score": 0.376717365871319,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3411395176652599,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.770563656711097,
+      "temp_variability": 6.58837642834972,
+      "heat_wave_count": 8,
+      "aqi": 178
+    },
+    "sensitivity_components": {
+      "population_density": 27730.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 4.2
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 100.0
+    }
+  },
+  {
+    "district": "Charki Dadri",
+    "exposure": 0.7678350106556557,
+    "sensitivity": 0.18899743907994682,
+    "adaptive_capacity": 0.0,
+    "potential_impact": 0.4784162248678013,
+    "ouv_vulnerability": 0.4784162248678013,
+    "esc_impact": 0.48704973492068077,
+    "community_vulnerability": 0.48704973492068077,
+    "cvi_score": 0.48704973492068077,
+    "vulnerability_level": "HIGH",
+    "exposure_components": {
+      "rainfall_cv": 1.4491206160968577,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.02260093871277,
+      "temp_variability": 6.565803587686865,
+      "heat_wave_count": 8,
+      "aqi": 102
+    },
+    "sensitivity_components": {
+      "population_density": 0,
+      "gw_depletion_rate": 0.9449871953997341,
+      "avg_gw_level": 11.844414704039512
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 0
+    }
+  },
+  {
+    "district": "East Delhi",
+    "exposure": 0.7635504040367501,
+    "sensitivity": 0.81396,
+    "adaptive_capacity": 0.29938046480934816,
+    "potential_impact": 0.788755202018375,
+    "ouv_vulnerability": 0.5526173030173226,
+    "esc_impact": 0.5315703818103936,
+    "community_vulnerability": 0.37242859382511534,
+    "cvi_score": 0.37242859382511534,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3038911460355227,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.639747151409892,
+      "temp_variability": 6.577225071575988,
+      "heat_wave_count": 8,
+      "aqi": 168
+    },
+    "sensitivity_components": {
+      "population_density": 27132.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 6.912332907276996
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 99.79348826978271
+    }
+  },
+  {
+    "district": "Faridabad",
+    "exposure": 0.7584415329585031,
+    "sensitivity": 0.07325999999999999,
+    "adaptive_capacity": 0.6452194390553744,
+    "potential_impact": 0.41585076647925157,
+    "ouv_vulnerability": 0.1475357682007614,
+    "esc_impact": 0.28852146092045683,
+    "community_vulnerability": 0.10236180574992255,
+    "cvi_score": 0.10236180574992255,
+    "vulnerability_level": "LOW",
+    "exposure_components": {
+      "rainfall_cv": 1.3399928408253439,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.769447547551824,
+      "temp_variability": 6.542332007300784,
+      "heat_wave_count": 8,
+      "aqi": 140
+    },
+    "sensitivity_components": {
+      "population_density": 2442.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 26.901980565730568
+    },
+    "adaptive_capacity_components": {
+      "income": 581000,
+      "urbanization_rate": 79.50647968512482
+    }
+  },
+  {
+    "district": "Gautam Buddha Nagar",
+    "exposure": 0.7883005429497717,
+    "sensitivity": 0.038579999999999996,
+    "adaptive_capacity": 0.8892496995051922,
+    "potential_impact": 0.4134402714748858,
+    "ouv_vulnerability": 0.04578863430249853,
+    "esc_impact": 0.22747318058149912,
+    "community_vulnerability": 0.025192723103910714,
+    "cvi_score": 0.025192723103910714,
+    "vulnerability_level": "LOW",
+    "exposure_components": {
+      "rainfall_cv": 1.4701298983551816,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.705373541174538,
+      "temp_variability": 6.543463182496845,
+      "heat_wave_count": 8,
+      "aqi": 135
+    },
+    "sensitivity_components": {
+      "population_density": 1286.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 16.305534675742184
+    },
+    "adaptive_capacity_components": {
+      "income": 1017000,
+      "urbanization_rate": 59.11656650173076
+    }
+  },
+  {
+    "district": "Ghaziabad",
+    "exposure": 0.7631073312273017,
+    "sensitivity": 0.11913,
+    "adaptive_capacity": 0.3503561390280553,
+    "potential_impact": 0.4411186656136508,
+    "ouv_vulnerability": 0.28657003307604434,
+    "esc_impact": 0.3719420198456266,
+    "community_vulnerability": 0.24162984983021654,
+    "cvi_score": 0.24162984983021654,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3491975114318484,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 145
+    },
+    "sensitivity_components": {
+      "population_density": 3971.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 10.447072791406123
+    },
+    "adaptive_capacity_components": {
+      "income": 211000,
+      "urbanization_rate": 67.5520463426851
+    }
+  },
+  {
+    "district": "Gurugram",
+    "exposure": 0.7686280910252522,
+    "sensitivity": 0.03612,
+    "adaptive_capacity": 0.8399641396906563,
+    "potential_impact": 0.4023740455126261,
+    "ouv_vulnerability": 0.06439427653976414,
+    "esc_impact": 0.23863656592385848,
+    "community_vulnerability": 0.0381904081288921,
+    "cvi_score": 0.0381904081288921,
+    "vulnerability_level": "LOW",
+    "exposure_components": {
+      "rainfall_cv": 1.3797770332828343,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.8925852769803,
+      "temp_variability": 6.6004051249068505,
+      "heat_wave_count": 8,
+      "aqi": 138
+    },
+    "sensitivity_components": {
+      "population_density": 1204.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 28.546956663382105
+    },
+    "adaptive_capacity_components": {
+      "income": 905000,
+      "urbanization_rate": 68.82137989688543
+    }
+  },
+  {
+    "district": "Hapur",
+    "exposure": 0.7713405298576826,
+    "sensitivity": 0.07572,
+    "adaptive_capacity": 0.17504079488190627,
+    "potential_impact": 0.4235302649288413,
+    "ouv_vulnerability": 0.3493951906991526,
+    "esc_impact": 0.4096371144194916,
+    "community_vulnerability": 0.3379339082983734,
+    "cvi_score": 0.3379339082983734,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4561303059533721,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 108
+    },
+    "sensitivity_components": {
+      "population_density": 2524.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 11.132180854572159
+    },
+    "adaptive_capacity_components": {
+      "income": 91764,
+      "urbanization_rate": 36.93533162730209
+    }
+  },
+  {
+    "district": "Jhajjar",
+    "exposure": 0.7764055226701082,
+    "sensitivity": 0.038064620378990485,
+    "adaptive_capacity": 0.12957439076590793,
+    "potential_impact": 0.40723507152454935,
+    "ouv_vulnerability": 0.35446783523324493,
+    "esc_impact": 0.4126807011399469,
+    "community_vulnerability": 0.35920785070889055,
+    "cvi_score": 0.35920785070889055,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4546357539452777,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.013102332688796,
+      "temp_variability": 6.613818479048161,
+      "heat_wave_count": 8,
+      "aqi": 115
+    },
+    "sensitivity_components": {
+      "population_density": 523.0,
+      "gw_depletion_rate": 0.11187310189495245,
+      "avg_gw_level": 3.8347615031988744
+    },
+    "adaptive_capacity_components": {
+      "income": 76292,
+      "urbanization_rate": 25.389996921969317
+    }
+  },
+  {
+    "district": "Jind",
+    "exposure": 0.7999663177686928,
+    "sensitivity": 0.01482,
+    "adaptive_capacity": 0.11684808461344734,
+    "potential_impact": 0.40739315888434635,
+    "ouv_vulnerability": 0.35979004858408864,
+    "esc_impact": 0.4158740291504532,
+    "community_vulnerability": 0.36727994540374576,
+    "cvi_score": 0.36727994540374576,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.5788789343396152,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.013102332688796,
+      "temp_variability": 6.613818479048161,
+      "heat_wave_count": 8,
+      "aqi": 100
+    },
+    "sensitivity_components": {
+      "population_density": 494.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 15.396516427821403
+    },
+    "adaptive_capacity_components": {
+      "income": 68763,
+      "urbanization_rate": 22.90466153781578
+    }
+  },
+  {
+    "district": "Karnal",
+    "exposure": 0.7538302937533028,
+    "sensitivity": 0.01791,
+    "adaptive_capacity": 0.09064028740656498,
+    "potential_impact": 0.3858701468766514,
+    "ouv_vulnerability": 0.3508947658621383,
+    "esc_impact": 0.410536859517283,
+    "community_vulnerability": 0.37332568057964793,
+    "cvi_score": 0.37332568057964793,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3883642039987376,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.79372061572404,
+      "temp_variability": 6.590538727096411,
+      "heat_wave_count": 8,
+      "aqi": 105
+    },
+    "sensitivity_components": {
+      "population_density": 597.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 20.11219512074306
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 30.213429135521658
+    }
+  },
+  {
+    "district": "Mahendragarh",
+    "exposure": 0.7568669854556261,
+    "sensitivity": 0.01458,
+    "adaptive_capacity": 0.0816086825075264,
+    "potential_impact": 0.3857234927278131,
+    "ouv_vulnerability": 0.3542451066740948,
+    "esc_impact": 0.4125470640044569,
+    "community_vulnerability": 0.378879641638705,
+    "cvi_score": 0.378879641638705,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4425343295541917,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.03421034607541,
+      "temp_variability": 6.508718135256798,
+      "heat_wave_count": 8,
+      "aqi": 85
+    },
+    "sensitivity_components": {
+      "population_density": 486.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 27.23605167980168
+    },
+    "adaptive_capacity_components": {
+      "income": 54835,
+      "urbanization_rate": 14.408060835842132
+    }
+  },
+  {
+    "district": "Meerut",
+    "exposure": 0.7478785727804464,
+    "sensitivity": 0.04038,
+    "adaptive_capacity": 0.2483154891946398,
+    "potential_impact": 0.3941292863902232,
+    "ouv_vulnerability": 0.29626087983430066,
+    "esc_impact": 0.3777565279005804,
+    "community_vulnerability": 0.2839537308784792,
+    "cvi_score": 0.2839537308784792,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3282824776444273,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 125
+    },
+    "sensitivity_components": {
+      "population_density": 1346.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 11.90287492524485
+    },
+    "adaptive_capacity_components": {
+      "income": 135804,
+      "urbanization_rate": 51.08422973154661
+    }
+  },
+  {
+    "district": "Muzaffarnagar",
+    "exposure": 0.7358770973148728,
+    "sensitivity": 0.03102,
+    "adaptive_capacity": 0.14455328664282857,
+    "potential_impact": 0.38344854865743644,
+    "ouv_vulnerability": 0.32801980069058145,
+    "esc_impact": 0.3968118804143489,
+    "community_vulnerability": 0.33945141892153374,
+    "cvi_score": 0.33945141892153374,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3302765757821329,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 100
+    },
+    "sensitivity_components": {
+      "population_density": 1034.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 10.879862310879028
+    },
+    "adaptive_capacity_components": {
+      "income": 83285,
+      "urbanization_rate": 28.751262214276196
+    }
+  },
+  {
+    "district": "New Delhi",
+    "exposure": 0.7733133645004261,
+    "sensitivity": 0.16699697433285665,
+    "adaptive_capacity": 0.3,
+    "potential_impact": 0.47015516941664137,
+    "ouv_vulnerability": 0.3291086185916489,
+    "esc_impact": 0.39746517115498936,
+    "community_vulnerability": 0.27822561980849253,
+    "cvi_score": 0.27822561980849253,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3260200236105761,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.809317932780647,
+      "temp_variability": 6.592026986629336,
+      "heat_wave_count": 8,
+      "aqi": 175
+    },
+    "sensitivity_components": {
+      "population_density": 4057.0,
+      "gw_depletion_rate": 0.22643487166428328,
+      "avg_gw_level": 13.440874234697766
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 100.0
+    }
+  },
+  {
+    "district": "North Delhi",
+    "exposure": 0.7674683280942606,
+    "sensitivity": 0.44449055555555556,
+    "adaptive_capacity": 0.2940045811945791,
+    "potential_impact": 0.605979441824908,
+    "ouv_vulnerability": 0.42781870981865117,
+    "esc_impact": 0.4566912258911907,
+    "community_vulnerability": 0.3224219132878123,
+    "cvi_score": 0.3224219132878123,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.313852494974876,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.74024632221388,
+      "temp_variability": 6.5856310255933295,
+      "heat_wave_count": 8,
+      "aqi": 170
+    },
+    "sensitivity_components": {
+      "population_density": 14557.0,
+      "gw_depletion_rate": 0.03890277777777779,
+      "avg_gw_level": 1.8208333333333333
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 98.00152706485972
+    }
+  },
+  {
+    "district": "North East Delhi",
+    "exposure": 0.7915784818177869,
+    "sensitivity": 0.5066790982776089,
+    "adaptive_capacity": 0.2940045811945791,
+    "potential_impact": 0.6491287900476979,
+    "ouv_vulnerability": 0.4582819519883806,
+    "esc_impact": 0.4749691711930284,
+    "community_vulnerability": 0.33532605893608575,
+    "cvi_score": 0.33532605893608575,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.4221718918533894,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.629641373244155,
+      "temp_variability": 6.5764389823138005,
+      "heat_wave_count": 8,
+      "aqi": 165
+    },
+    "sensitivity_components": {
+      "population_density": 14557.0,
+      "gw_depletion_rate": 0.34984549138804466,
+      "avg_gw_level": 2.6593750000000003
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 98.00152706485972
+    }
+  },
+  {
+    "district": "North West Delhi",
+    "exposure": 0.7797415147576012,
+    "sensitivity": 0.81671,
+    "adaptive_capacity": 0.2940045811945791,
+    "potential_impact": 0.7982257573788006,
+    "ouv_vulnerability": 0.5635437278819206,
+    "esc_impact": 0.5381262367291524,
+    "community_vulnerability": 0.379914657869783,
+    "cvi_score": 0.379914657869783,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3753224512287032,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.94180327467525,
+      "temp_variability": 6.605699475093315,
+      "heat_wave_count": 8,
+      "aqi": 162
+    },
+    "sensitivity_components": {
+      "population_density": 14557.0,
+      "gw_depletion_rate": 1.9,
+      "avg_gw_level": 5.175
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 98.00152706485972
+    }
+  },
+  {
+    "district": "Nuh",
+    "exposure": 0.7648326466688607,
+    "sensitivity": 0.1040598717948718,
+    "adaptive_capacity": 0.022974841606263997,
+    "potential_impact": 0.4344462592318663,
+    "ouv_vulnerability": 0.4244649252395803,
+    "esc_impact": 0.4546789551437482,
+    "community_vulnerability": 0.44423277816761897,
+    "cvi_score": 0.44423277816761897,
+    "vulnerability_level": "HIGH",
+    "exposure_components": {
+      "rainfall_cv": 1.4300920442343732,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.055318359462035,
+      "temp_variability": 6.409578702125415,
+      "heat_wave_count": 8,
+      "aqi": 110
+    },
+    "sensitivity_components": {
+      "population_density": 617.0,
+      "gw_depletion_rate": 0.427749358974359,
+      "avg_gw_level": 7.374125822325821
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 7.658280535421333
+    }
+  },
+  {
+    "district": "Palwal",
+    "exposure": 0.7488409996828482,
+    "sensitivity": 0.02454,
+    "adaptive_capacity": 0.140564107064847,
+    "potential_impact": 0.3866904998414241,
+    "ouv_vulnerability": 0.332335695020755,
+    "esc_impact": 0.399401417012453,
+    "community_vulnerability": 0.34325991346966295,
+    "cvi_score": 0.34325991346966295,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.362125456290323,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.055318359462035,
+      "temp_variability": 6.409578702125415,
+      "heat_wave_count": 8,
+      "aqi": 112
+    },
+    "sensitivity_components": {
+      "population_density": 818.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 8.225781265669067
+    },
+    "adaptive_capacity_components": {
+      "income": 65009,
+      "urbanization_rate": 31.685935688282342
+    }
+  },
+  {
+    "district": "Panipat",
+    "exposure": 0.7722121983809875,
+    "sensitivity": 0.02853,
+    "adaptive_capacity": 0.5091453365045208,
+    "potential_impact": 0.40037109919049374,
+    "ouv_vulnerability": 0.19652402116646495,
+    "esc_impact": 0.31791441269987897,
+    "community_vulnerability": 0.156049772066162,
+    "cvi_score": 0.156049772066162,
+    "vulnerability_level": "LOW",
+    "exposure_components": {
+      "rainfall_cv": 1.4288517419929458,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.73887518648285,
+      "temp_variability": 6.585509154886829,
+      "heat_wave_count": 8,
+      "aqi": 122
+    },
+    "sensitivity_components": {
+      "population_density": 951.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 17.444378844099663
+    },
+    "adaptive_capacity_components": {
+      "income": 530000,
+      "urbanization_rate": 46.048445501506926
+    }
+  },
+  {
+    "district": "Rewari",
+    "exposure": 0.7724916382637008,
+    "sensitivity": 0.01695,
+    "adaptive_capacity": 0.16038130733995903,
+    "potential_impact": 0.3947208191318504,
+    "ouv_vulnerability": 0.3314149781251847,
+    "esc_impact": 0.39884898687511083,
+    "community_vulnerability": 0.3348810649288624,
+    "cvi_score": 0.3348810649288624,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.496490896125739,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.03948734942207,
+      "temp_variability": 6.483363478933319,
+      "heat_wave_count": 8,
+      "aqi": 90
+    },
+    "sensitivity_components": {
+      "population_density": 565.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 23.499195295580975
+    },
+    "adaptive_capacity_components": {
+      "income": 118000,
+      "urbanization_rate": 25.92710244665301
+    }
+  },
+  {
+    "district": "Rohtak",
+    "exposure": 0.7937977688801432,
+    "sensitivity": 0.01824,
+    "adaptive_capacity": 0.12612956604008277,
+    "potential_impact": 0.4060188844400716,
+    "ouv_vulnerability": 0.3548078987415669,
+    "esc_impact": 0.4128847392449401,
+    "community_vulnerability": 0.3608077662594031,
+    "cvi_score": 0.3608077662594031,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.5182047387854176,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.013102332688796,
+      "temp_variability": 6.613818479048161,
+      "heat_wave_count": 8,
+      "aqi": 118
+    },
+    "sensitivity_components": {
+      "population_density": 608.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 4.064016975360478
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 42.04318868002759
+    }
+  },
+  {
+    "district": "Shahdara",
+    "exposure": 0.7652282308103494,
+    "sensitivity": 1.7910899999999998,
+    "adaptive_capacity": 0.3,
+    "potential_impact": 1.2781591154051746,
+    "ouv_vulnerability": 0.8947113807836221,
+    "esc_impact": 0.7368268284701733,
+    "community_vulnerability": 0.5157787799291214,
+    "cvi_score": 0.5157787799291214,
+    "vulnerability_level": "HIGH",
+    "exposure_components": {
+      "rainfall_cv": 1.3156811097640393,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 166
+    },
+    "sensitivity_components": {
+      "population_density": 59703.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 0
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 100.0
+    }
+  },
+  {
+    "district": "Shamli",
+    "exposure": 0.7456568606478436,
+    "sensitivity": 0.16306018037518039,
+    "adaptive_capacity": 0.14505150291216368,
+    "potential_impact": 0.45435852051151204,
+    "ouv_vulnerability": 0.38845313425037004,
+    "esc_impact": 0.43307188055022205,
+    "community_vulnerability": 0.3702541534074153,
+    "cvi_score": 0.3702541534074153,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3793956291140161,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.57433889875929,
+      "temp_variability": 6.572329111537443,
+      "heat_wave_count": 8,
+      "aqi": 95
+    },
+    "sensitivity_components": {
+      "population_density": 1126.0,
+      "gw_depletion_rate": 0.6464009018759019,
+      "avg_gw_level": 15.219323873657206
+    },
+    "adaptive_capacity_components": {
+      "income": 72257,
+      "urbanization_rate": 31.490534304054563
+    }
+  },
+  {
+    "district": "Sonipat",
+    "exposure": 0.7550998640531543,
+    "sensitivity": 0.020489999999999998,
+    "adaptive_capacity": 0.093799383586632,
+    "potential_impact": 0.38779493202657717,
+    "ouv_vulnerability": 0.35142000644446436,
+    "esc_impact": 0.41085200386667864,
+    "community_vulnerability": 0.37231433915865164,
+    "cvi_score": 0.37231433915865164,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.362066660862377,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.870504216661704,
+      "temp_variability": 6.598112412504999,
+      "heat_wave_count": 8,
+      "aqi": 120
+    },
+    "sensitivity_components": {
+      "population_density": 683.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 10.04891633723265
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 31.266461195544004
+    }
+  },
+  {
+    "district": "South Delhi",
+    "exposure": 0.7689974864422842,
+    "sensitivity": 0.34826333333333337,
+    "adaptive_capacity": 0.29866105597912684,
+    "potential_impact": 0.5586304098878088,
+    "ouv_vulnerability": 0.39178926176866335,
+    "esc_impact": 0.435073557061198,
+    "community_vulnerability": 0.3051340290807057,
+    "cvi_score": 0.3051340290807057,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.3399928408253439,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.76250559494859,
+      "temp_variability": 6.580783963406821,
+      "heat_wave_count": 8,
+      "aqi": 160
+    },
+    "sensitivity_components": {
+      "population_density": 11060.0,
+      "gw_depletion_rate": 0.08231666666666668,
+      "avg_gw_level": 1.8262222222222222
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 99.55368532637561
+    }
+  },
+  {
+    "district": "South East Delhi",
+    "exposure": 0.7670656601656907,
+    "sensitivity": 0.34826333333333337,
+    "adaptive_capacity": 0.29866105597912684,
+    "potential_impact": 0.557664496749512,
+    "ouv_vulnerability": 0.3911118292682344,
+    "esc_impact": 0.43466709756094063,
+    "community_vulnerability": 0.30484896320400795,
+    "cvi_score": 0.30484896320400795,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.33684630308923,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.705155404060488,
+      "temp_variability": 6.582574545413443,
+      "heat_wave_count": 8,
+      "aqi": 158
+    },
+    "sensitivity_components": {
+      "population_density": 11060.0,
+      "gw_depletion_rate": 0.08231666666666668,
+      "avg_gw_level": 1.8262222222222222
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 99.55368532637561
+    }
+  },
+  {
+    "district": "South West Delhi",
+    "exposure": 0.7832819297211855,
+    "sensitivity": 0.34826333333333337,
+    "adaptive_capacity": 0.29866105597912684,
+    "potential_impact": 0.5657726315272594,
+    "ouv_vulnerability": 0.3967983799512387,
+    "esc_impact": 0.4380790279707432,
+    "community_vulnerability": 0.3072418828746916,
+    "cvi_score": 0.3072418828746916,
+    "vulnerability_level": "MODERATE",
+    "exposure_components": {
+      "rainfall_cv": 1.400141382149587,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 32.013102332688796,
+      "temp_variability": 6.613818479048161,
+      "heat_wave_count": 8,
+      "aqi": 156
+    },
+    "sensitivity_components": {
+      "population_density": 11060.0,
+      "gw_depletion_rate": 0.08231666666666668,
+      "avg_gw_level": 1.8262222222222222
+    },
+    "adaptive_capacity_components": {
+      "income": 0,
+      "urbanization_rate": 99.55368532637561
+    }
+  },
+  {
+    "district": "West Delhi",
+    "exposure": 0.7833468560561963,
+    "sensitivity": 0.5868899999999999,
+    "adaptive_capacity": 0.6225796991836801,
+    "potential_impact": 0.6851184280280981,
+    "ouv_vulnerability": 0.258577603201169,
+    "esc_impact": 0.3551465619207014,
+    "community_vulnerability": 0.1340395222339929,
+    "cvi_score": 0.1340395222339929,
+    "vulnerability_level": "LOW",
+    "exposure_components": {
+      "rainfall_cv": 1.3858769014221415,
+      "extreme_rainfall_events": 8,
+      "avg_max_temp": 31.93464289919099,
+      "temp_variability": 6.604913466872529,
+      "heat_wave_count": 8,
+      "aqi": 164
+    },
+    "sensitivity_components": {
+      "population_density": 19563.0,
+      "gw_depletion_rate": 0,
+      "avg_gw_level": 11.44188313097777
+    },
+    "adaptive_capacity_components": {
+      "income": 461910,
+      "urbanization_rate": 99.74756639456001
+    }
+  }
+]
