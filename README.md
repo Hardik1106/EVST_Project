@@ -1,6 +1,24 @@
-# Delhi NCR Environmental & Socioeconomic Data Analysis (EVST_Project)
+# Delhi NCR Environmental & Socioeconomic Data Analysis
 
 This repository contains a comprehensive analysis of environmental and socioeconomic indicators for the Delhi National Capital Region (NCR) from 2013–2024. The project processes IMD gridded climate data (temperature, rainfall), groundwater levels, population statistics, income data, and computes a Climate Vulnerability Index (CVI) for all NCR districts.
+
+---
+
+## Abstract
+
+This study presents a comprehensive Climate Vulnerability Index assessment for the Delhi National Capital Region using the IPCC vulnerability framework. The analysis integrates multi-dimensional environmental, climatic, and socio-economic datasets from 2018 to 2024 across 35 districts to evaluate exposure, sensitivity, and adaptive capacity. Standardized processing, normalization, and anomaly-detection methods were applied to variables including temperature and rainfall variability, air quality levels, groundwater depth, population density, and income distribution to construct composite vulnerability indicators. 
+
+The results show that the NCR experiences moderate overall vulnerability with strong spatial variation driven mainly by socio-economic conditions rather than climatic exposure. High-vulnerability districts such as Shahdara, Charki Dadri, and Nuh reflect the combined effect of population pressure, groundwater stress, and limited adaptive capacity, aligning with the concerns of SDG 6 on water security, SDG 10 on inequality, and SDG 13 on climate resilience. In contrast, districts such as Gautam Buddha Nagar and Gurugram demonstrate stronger resilience supported by higher economic resources and better urban infrastructure, reflecting progress toward SDG 11. 
+
+Exposure remains relatively uniform across the region, while sensitivity and adaptive capacity show wide divergence, emerging as the dominant determinants of final CVI outcomes. The study establishes a robust, spatially resolved baseline that functions as an urban informatics decision support layer, enabling targeted adaptation planning, prioritization of investments, and long-term resilience strategies for one of India’s fastest-growing metropolitan regions.
+
+---
+
+## 🔑 Keywords
+
+`Climate Vulnerability Index` | `IPCC Framework` | `Delhi NCR` | `Exposure–Sensitivity–Adaptive Capacity` | `Socio-economic Resilience` | `SDG 6` | `SDG 10` | `SDG 11` | `SDG 13` | `Climate Risk Assessment`
+
+---
 
 ## Project Overview
 
