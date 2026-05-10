@@ -1,0 +1,7 @@
+Scenario,S_PD_weight,S_GWD_weight,AC_Income_weight,AC_Urban_weight,PI_Exposure_weight,PI_Sensitivity_weight
+Baseline,0.6,0.4,0.7,0.3,0.5,0.5
+Scenario 1: Sensitivity Emphasis,0.5,0.5,0.7,0.3,0.5,0.5
+Scenario 2: Population Emphasis,0.7,0.3,0.7,0.3,0.5,0.5
+Scenario 3: Exposure Emphasis,0.6,0.4,0.7,0.3,0.6,0.4
+Scenario 4: Sensitivity Emphasis in PI,0.6,0.4,0.7,0.3,0.4,0.6
+Scenario 5: Income Reduced,0.6,0.4,0.6,0.4,0.5,0.5

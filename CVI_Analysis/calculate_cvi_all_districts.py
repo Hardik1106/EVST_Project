@@ -82,17 +82,17 @@ def load_data():
     print("="*80)
     
     # Rainfall data
-    rainfall_path = os.path.join(project_root, 'delhi_ncr_rainfall_monthly_avg_2013_2024_filled.csv')
+    rainfall_path = os.path.join(project_root, 'Rainfall', 'delhi_ncr_rainfall_monthly_avg_2013_2024_filled.csv')
     df_rainfall = pd.read_csv(rainfall_path)
     print(f"✓ Loaded rainfall data: {len(df_rainfall)} records")
     
     # Temperature data
-    temp_path = os.path.join(project_root, 'delhi_ncr_temp_monthly_avg_2013_2024.csv')
+    temp_path = os.path.join(project_root, 'Temperature', 'delhi_ncr_temp_monthly_avg_2013_2024.csv')
     df_temp = pd.read_csv(temp_path)
     print(f"✓ Loaded temperature data: {len(df_temp)} records")
     
     # Population data
-    pop_path = os.path.join(project_root, 'population_data_and_vis', 'Delhi_NCR_Population_Data_Clean.csv')
+    pop_path = os.path.join(project_root, 'Population', 'Delhi_NCR_Population_Data_Clean.csv')
     df_pop = pd.read_csv(pop_path)
     print(f"✓ Loaded population data: {len(df_pop)} records")
     
@@ -102,7 +102,7 @@ def load_data():
     print(f"✓ Loaded income data: {len(df_income)} records")
     
     # Groundwater data
-    gw_path = os.path.join(project_root, 'ground_water_vis', 'ncr_groundwater_yearly.csv')
+    gw_path = os.path.join(project_root, 'GroundWater', 'ncr_groundwater_yearly.csv')
     df_groundwater = pd.read_csv(gw_path)
     print(f"✓ Loaded groundwater data: {len(df_groundwater)} records")
     

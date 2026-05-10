@@ -1,0 +1,7 @@
+Scenario,Top10_overlap_count,Top10_overlap_percent,High_class_overlap_count,High_class_overlap_percent,High_class_count_in_scenario,Districts_reclassified_count,Rank Correlation,Classification Stability (%),Mean CVI Change (%)
+Baseline,10,100.0,4,100.0,4,0,1.0,100.0,0.0
+Scenario 1: Sensitivity Emphasis,8,80.0,4,100.0,4,0,0.977310924369748,100.0,-1.0021669211244078
+Scenario 2: Population Emphasis,10,100.0,4,100.0,4,0,0.99327731092437,100.0,1.0021669211244055
+Scenario 3: Exposure Emphasis,7,70.0,4,100.0,9,5,0.9453781512605042,85.71428571428571,6.402381996043862
+Scenario 4: Sensitivity Emphasis in PI,9,90.0,3,75.0,3,1,0.9750700280112046,97.14285714285714,-6.402381996043863
+Scenario 5: Income Reduced,7,70.0,3,75.0,3,1,0.8691876750700281,97.14285714285714,-7.636915797106947
