@@ -14,7 +14,7 @@ Exposure remains relatively uniform across the region, while sensitivity and ada
 
 ---
 
-## 🔑 Keywords
+## Keywords
 
 `Climate Vulnerability Index` | `IPCC Framework` | `Delhi NCR` | `Exposure–Sensitivity–Adaptive Capacity` | `Socio-economic Resilience` | `SDG 6` | `SDG 10` | `SDG 11` | `SDG 13` | `Climate Risk Assessment`
 
